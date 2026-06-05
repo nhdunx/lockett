@@ -1,5 +1,5 @@
 #!name=All In One
-#!desc=Được tổng hợp bởi Đinh Duy Vinh
+#!desc=Nhót Ngay Dũng Sầu Đời
 #!author=duyvinh09
 #!homepage=https://module-ios.netlify.app
 #!tgchannel=https://t.me/tienich
@@ -101,7 +101,7 @@ BeautyPlus = type=http-response, pattern=https:\/\/(api\.mr\.pixocial\.com\/v1\/
 
 #LocketGold
 #hostname = api.revenuecat.com
-revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/Locket_DuyVinh09.js, requires-body=true, max-size=-1, timeout=60
+revenuecat = type=http-response, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/[^/]+$), script-path=https://raw.githubusercontent.com/nhdunx/lockett/refs/heads/main/Locket.js, requires-body=true, max-size=-1, timeout=60
 deleteHeader = type=http-request, pattern=^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers), script-path=https://raw.githubusercontent.com/duyvinh09/Module_IOS/refs/heads/main/js/deleteHeader.js, timeout=60
 #************************************#
 
