@@ -263,7 +263,7 @@ if (ua.includes("Locket")) {
         widget_frame_event: JSON.stringify({
             uid: "midautumn_2026",
             // url: "https://i.ibb.co/vC8b93Ld/ig.png",
-            url: "https://i.ibb.co/1Yt1Dzzy/Shin-chan-1.png",
+            url: "https://sv2.anhsieuviet.com/2026/11/03/79DF6D29-9687-42DD-955E-5B1D6F4F916E.png",
             // url: "https://i.ibb.co/RTm5P1n9/kitty-1.png",
             // url: "https://i.ibb.co/JjLZ3cvD/khung-ins.png",
             use_local_time_zone: true,
