@@ -8,7 +8,7 @@ var ua = $request.headers["User-Agent"] || $request.headers["user-agent"],
 obj.Attention = "欢迎你!";
 
 var FAR_FUTURE = "9999-01-09T10:10:14Z";
-var PAST = "2026-10-23T10:10:14Z";
+var PAST = "2026-11-18T10:10:14Z";
 
 function makeSub(productId, priceAmount, priceCurrency) {
     return {
@@ -53,12 +53,12 @@ obj.subscriber.subscriptions[goldProduct] = makeSub(goldProduct, 399000.0, "VND"
 obj.subscriber.entitlements["Gold"] = makeEnt(goldProduct);
 
 // ========== 2. UNLOCK FILTER PACK ==========
-// var pack10Product = "com.locket.Locket.FilterPack_10Photos_400";
-// obj.subscriber.subscriptions[pack10Product] = makeSub(pack10Product, 0.0, "USD");
-// obj.subscriber.entitlements["effect_pack_10"] = makeEnt(pack10Product);
-// var pack20Product = "com.locket.Locket.FilterPack_20Photos_500";
-// obj.subscriber.subscriptions[pack20Product] = makeSub(pack20Product, 0.0, "USD");
-// obj.subscriber.entitlements["effect_pack_20"] = makeEnt(pack20Product);
+ var pack10Product = "com.locket.Locket.FilterPack_10Photos_400";
+obj.subscriber.subscriptions[pack10Product] = makeSub(pack10Product, 0.0, "USD");
+obj.subscriber.entitlements["effect_pack_10"] = makeEnt(pack10Product);
+var pack20Product = "com.locket.Locket.FilterPack_20Photos_500";
+obj.subscriber.subscriptions[pack20Product] = makeSub(pack20Product, 0.0, "USD");
+obj.subscriber.entitlements["effect_pack_20"] = makeEnt(pack20Product);
 
 $done({
     body: JSON.stringify(obj)
